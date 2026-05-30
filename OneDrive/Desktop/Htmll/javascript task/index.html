@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="col-6 d-flex flex-column bg-dark text-white shadow-sm rounded p-5 m-5 gap-3">
+    <h3>Add New Task </h3>
+    <label for="task-name">Task Name</label>
+    <input type="text" id="task-name" class="form-control ">
+
+    <label for="task-dsc">Task Description</label>
+    <input type="text" class="form-control " id="task-dsc">
+
+
+
+
+    <label for="task-status" > Task Status</label>
+    <div class="d-flex gap-3">
+
+  <input type="radio" name="status" id="completing">
+<label for="completing">Completed</label>
+
+<input type="radio" name="status" id="waitting">
+<label for="waitting">Waiting</label>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <button class=" btn btn-primary  add-task"> Add Task </button>
+
+
+</div>
+<button class="btn btn-primary  m-5 all">All Tasks</button>
+<button class="btn btn-primary  m-5 complete-task">Completed Tasks</button>
+<button class="btn btn-primary  m-5  wait-task">Watting Tasks</button>
+<button class="btn btn-danger  m-5  " onclick=" clearTasks()">Clear Tasks</button>
+
+    <div class="d-flex">
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Task Name </th>
+      <th scope="col">Task Description</th>
+      <th scope="col">Task Status</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+</div>
+
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+ rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="./js/script.js"></script>
+</body>
+</html>
